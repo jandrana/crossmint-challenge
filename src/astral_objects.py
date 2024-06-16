@@ -12,8 +12,7 @@ class Polyanet(AstralObject):
 
 class Soloon(AstralObject):
 	def __init__(self, row, column, color):
-		self.row = row
-		self.column = column
+		super().__init__(row, column)
 		self.color = color
 
 	def create(self, api_client):
@@ -21,8 +20,7 @@ class Soloon(AstralObject):
 
 class Cometh(AstralObject):
 	def __init__(self, row, column, direction):
-		self.row = row
-		self.column = column
+		super().__init__(row, column)
 		self.direction = direction
 
 	def create(self, api_client):
