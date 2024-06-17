@@ -21,7 +21,6 @@ release = '1.0'
 extensions = [
 	'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
-    'sphinx_wagtail_theme'
 ]
 
 templates_path = ['_templates']
@@ -36,5 +35,5 @@ autodoc_default_options = {
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_wagtail_theme'
+html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
