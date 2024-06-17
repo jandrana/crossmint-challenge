@@ -5,8 +5,6 @@ import time
 
 load_dotenv()
 
-max_retries = 5
-
 def get_env_variable(name):
 	value = os.getenv(name)
 	if value is None:
@@ -46,6 +44,7 @@ class ApiClient:
 			self._handle_error(err)
 
 	def _post(self, url, data):
+		max_retries = 5
 		retry_delay = 1
 		for attempt in range(max_retries):
 			try:
