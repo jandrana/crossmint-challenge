@@ -1,2 +1,20 @@
+
+# Ignored files/folder regarding docs/ folder
+docs/build/doctrees/
+docs/build/html/_sources/
+docs/build/html/_static/
+docs/build/html/.buildinfo
+docs/build/html/objects.inv
+docs/build/html/searchindex.js
+
+# Ignore empty _static and _templates folders in source
+docs/source/_static/
+docs/source/_templates/
+
+# Ignore .env file
 .env
-__pycache__
+
+# Ignore temporary/unnecessary files/folders
+.vscode/
+__pycache__/
+.pytest_cache/
