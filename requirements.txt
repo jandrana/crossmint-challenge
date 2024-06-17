@@ -3,4 +3,4 @@ python-dotenv
 sphinx
 sphinxcontrib-napoleon
 pytest
-sphinx-wagtail-theme
+sphinx-book-theme
