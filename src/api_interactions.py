@@ -114,7 +114,7 @@ class ApiClient:
 			except requests.exceptions.HTTPError as err:
 				if response.status_code == 429:
 					print(f"Too Many Requests for url. Waiting {retry_delay} seconds before retrying...")
-					#time.sleep(retry_delay)
+					time.sleep(retry_delay)
 					retry_delay *= 2
 				else:
 					self._handle_error(err)
