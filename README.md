@@ -1,7 +1,28 @@
-# Coding Challenge | Crossmint | Internship
+# Coding Challenge | Crossmint - Internship Application
 This repository contains my solution for a coding challenge as part of Crossmint's Internship program.
 
-## Project Structure
+## Table of Contents 📑
+
+- [Project Structure 📁](#project-structure-)
+- [Setup 🔧](#setup-)
+- [Running Instructions 🦾](#running-instructions-)
+- [Documentation 📚](#documentation-)
+  - [View Documentation](#view-documentation-)
+  - [Updating the Documentation](#updating-the-documentation-)
+- [Challenge Approach 🧩](#challenge-approach-)
+	1. [Preparation, analysis and planning of approach](#1-preparation-analysis-and-planning-of-approach-)
+	2. [Development for Phase 1](#2-development-for-phase-1-)
+	3. [Development for Phase 2](#3-development-for-phase-2-)
+- [Personal improvements 🌟](#personal-improvements-)
+  - [Added `.env.template` file](#added-envtemplate-file-)
+  - [Added Docstrings 📚](#added-docstrings-)
+  - [Generated `docs/` using Sphinx](#generated-docs-using-sphinx-)
+  - [Utils functions](#utils-functions-)
+  - [Project's README](#projects-readme-)
+- [Contact me 📬](#contact-me-)
+
+
+## Project Structure 📁
 
 ```plaintext
 crossmint-challenge/
@@ -21,7 +42,7 @@ crossmint-challenge/
 └── README.md
 ```
 
-## Setup
+## Setup 🔧
 
 1. Clone the repository and install the required packages:
 	```bash
@@ -35,22 +56,22 @@ crossmint-challenge/
 		```
 	- Edit and fill the `.env` file with the correct values
 
-## Running Instructions
+## Running Instructions 🦾
 
-To run the application:
+To run the application use the following command:
 ```bash
 python src/main.py
 ```
 
-## Documentation
+## Documentation 📚
 
 This project uses Sphinx to generate documentation from the Google-style docstrings added in the code.
 
-### View Documentation
+### View Documentation 👀
 
 If you want to view the documentation, open the [`index.html`](docs/build/html) file in your browser.
 
-### Updating the Documentation
+### Updating the Documentation 🔄
 
 To update/create the documentation, run the following command in the project's root directory:
 
@@ -60,11 +81,20 @@ cd docs && sphinx-apidoc -o source ../src && make html
 
 This command builds the HTML documentation from the docstrings added in the application  
 
-## Challenge Approach
+## Challenge Approach 🧩
 
-During this section you can find a detailed explanation of the approach and steps taken in order to solve Crossmint's Internship Challenge
+During this section you can find a detailed explanation of the approach and steps taken in order to solve Crossmint's Internship Challenge.
 
-### 1. Preparation, analysis and planning of approach
+**Development Time Summary:**
+- [Preparation, analysis and planning of approach 🔍](#1-preparation-analysis-and-planning-of-approach-) (~1 hour)
+- [Development for Phase 1 📈](#2-development-for-phase-1-) (2-3 hours)
+- [Development for Phase 2 🚀](#3-development-for-phase-2-) (~1 hours)
+
+_**Total**: 4-5 hours_
+
+**🚧 Warning:** If you're not in the mood for detailed explanations of code or my solving/thought processes, feel free to skip to the next [Personal improvements](#personal-improvements-) section! 😄
+
+### 1. Preparation, analysis and planning of approach 🔍
 
 #### 1.1 Analysis and understanding of the problem
 
@@ -111,7 +141,7 @@ crossmint-challenge/
 
 </ul>
 
-### 2. Development for Phase 1
+### 2. Development for Phase 1 📈
 
 #### 2.1 Progressed with `api_interactions.py`
 
@@ -222,7 +252,7 @@ This step required further testing of the program when encountering diverse type
 
 </details>
 
-### 3. Development for Phase 2
+### 3. Development for Phase 2 🚀
 
 #### 3.1 Finished functionality of `api_interactions.py` (`ApiClient` Class)
 
@@ -302,23 +332,23 @@ Let me explain the map parsing functionality with an example where `[goal_map : 
 		color = "blue"
 </details>
 
-### Personal improvements:
+## Personal improvements 🌟
 
 Truth is, as much as I love learning and solving challenges, I also love giving some personal enhancements to the project's I develop. Which is why I took the freedom of making the following improvements.
 
-#### Added `.env.template` file to repository
+### Added `.env.template` file 📄
 
 Since I considered some needed variables to be private (my candidate ID and the metaverse api base URL), I preferred to store this information in environment variables at the `.env` file (which of course I added to the .gitignore).
 
 Since the `.env` file is not present in this public repository, I created a new `.env.template` which serves as an example of what the `.env` should look like. Naturally, this new file needs to be renamed and edited filling the values of each variable. See the [Setup](#setup) Section for an easy setup.
 
-#### Added Docstrings
+### Added Docstrings 📚
 
 If you have seen my [GitHub](https://github.com/jandrana), you should have noticed by now that I **love** making clean and documented code for others to see and understand. Following this practice has helped countless times, it daily helps me when mentoring other 42 students by making it much easier for everyone to understand a code that they didn't develop. But it has specially helped me when developing collaborative projects. 
 
 This project couldn't be less! So I decided to implement Docstrings (following [Google's Style Guide](https://android.googlesource.com/platform/external/google-styleguide/+/refs/tags/android-s-beta-2/pyguide.md#3_8_3-functions-and-methods)) to all the functions and classes present in the `src/` folder of this repository.
 
-#### Generated `docs/` using Sphinx
+### Generated `docs/` using Sphinx 💻
 
 After doing some research regarding the usage of Docstrings for documenting code I found an amazing Python package: **Sphinx**
 
@@ -331,13 +361,13 @@ You can see the generated documentation if you open in your browser the `.html` 
 Note: In order to be able to see the html files (in their proper format), make sure to clone this repository and open the **downloaded** files in your browser.
 
 
-#### Utils functions
+### Utils functions 📐
 
 During the development of the project I created a couple of helper functions made to "see" what was happening inside the program. After finishing the project I thought the best option was to move them to the `utils/` folder, since they are not actively useful for the program to work but they are very useful for developing/debugging cases.
 
 During the project I also created a `test/` folder, making use of the `pytest` python package. Truth is, it is my first experience using this package and I just wanted to play around and learn about it, which is why I deleted such folder from this `main` branch of the repo. BUT! If you are very very curious about it, you can take a look to the `test` branch of this repo and see it!
 
-#### Project's README 
+### Project's README 📘
 
 Finally, I culminated the project by creating this README—_because a finished project seems too empty without it_
 
@@ -345,9 +375,9 @@ I love making README's for a project's presentation which is why I do it in _~~a
  
 Anyways, In this README, as you have seen, I added some important and basic information regarding this project. Since I was already working on this, I wanted to add what was going to be a _"small"_ section regarding my Challenge Experience and Approach. I know, it definitely ended up being bigger than "small" but I am sure it served well its purpose.
 
-## 📬 Contact me
+## Contact me 📬
 
-I'm always happy to talk about experiences and share thoughts with anyone interested in coding, so please feel free to contact me! 
+I'm always happy to talk about experiences and share thoughts with anyone interested in coding, so feel free to contact me! 
 
-- Github: [@jandrana](https://github.com/jandrana)
-- Mail: yo@anaalejandra.com
+- **Github:** [@jandrana](https://github.com/jandrana)
+- **Mail:** yo@anaalejandra.com
