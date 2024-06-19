@@ -3,3 +3,4 @@ python-dotenv
 sphinx
 sphinxcontrib-napoleon
 sphinx-book-theme
+pytest
